@@ -1,0 +1,96 @@
+/* Màu nền chính */
+.bg-color {
+  background-color: #faeddf;
+}
+
+/* Container của giỏ hàng */
+.cart {
+  padding: 100px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Tiêu đề giỏ hàng */
+.cart h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Danh sách sản phẩm trong giỏ */
+.cart .cart-item {
+  flex: 1;
+  font-size: 14px;
+}
+
+.cart .cart-item a {
+  color: #000;
+  text-decoration: none;
+}
+
+.cart .cart-item a:hover {
+  color: #0e5540;
+  text-decoration: underline;
+}
+
+/* Phần hiển thị tổng tiền */
+.checkout-group {
+  width: 300px; /* Đảm bảo đủ rộng để chứa nội dung trên một dòng */
+  background-color: #faeddf;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Nội dung bên trong phần Total */
+.checkout-group h3 {
+  font-size: 16px; /* Giảm kích thước chữ nếu cần */
+  margin: 0;
+  white-space: nowrap; /* Đảm bảo nội dung không xuống dòng */
+}
+
+.checkout-group p {
+  font-size: 16px;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+/* Nút thanh toán */
+.checkout-btn {
+  width: 100%; 
+  height: 45px;
+  background-color: #0e5540;
+  color: #faeddf;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkout-btn:hover {
+  border: 2px solid #0e5540;
+  background-color: #faeddf;
+  color: #0e5540;
+}
+
+/* Responsive cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+  .cart {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checkout-group {
+    width: 100%;
+    position: static;
+    margin-top: 20px;
+  }
+}

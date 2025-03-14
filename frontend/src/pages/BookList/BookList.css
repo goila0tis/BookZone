@@ -1,0 +1,14 @@
+.add-book-btn {
+  width: 169px;
+  height: 60px;
+  margin: 38px 0 30px 1px;
+  background-color: #0e5540;
+  color: #faeddf;
+  padding: 10px 22px;
+  font-weight: 600;
+}
+
+.add-book-btn:hover {
+  color: #0e5540;
+  border: 2px solid #0e5540;
+}
