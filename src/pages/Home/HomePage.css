@@ -1,0 +1,122 @@
+/* Loại bỏ margin và padding mặc định */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000000; /* Nền đen cho toàn bộ trang */
+}
+
+/* Toàn bộ trang */
+.home {
+  font-family: Arial, sans-serif;
+  color: #000000; /* Màu chữ đen cho toàn bộ trang */
+  padding-top: 60px; /* Giảm khoảng cách cho header */
+  width: 100%;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222222;
+  color: #ffffff;
+  padding: 10px 20px;
+  z-index: 1000;
+  box-shadow: none; /* Loại bỏ bóng đổ */
+}
+
+/* Phần Discover Your Next Great Read */
+.intro-section {
+  display: flex;
+  justify-content: flex-start; /* Căn trái cho phần chữ */
+  align-items: center;
+  padding: 50px 20px 20px; /* Giảm khoảng cách trên cho phần Discover */
+  background-color: #fbeae2; /* Nền hồng nhạt */
+  gap: 20px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+}
+
+/* Khung chữ giới thiệu */
+.intro-text {
+  text-align: left; /* Căn trái cho chữ */
+  max-width: 50%; /* Giới hạn chiều rộng */
+  padding: 20px; /* Khoảng cách trong khung */
+  background-color: #ffffff; /* Nền trắng cho khung chữ */
+  border: 2px solid #000000; /* Viền đen cho khung */
+  border-radius: 10px; /* Viền bo tròn */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ cho khung */
+}
+
+.intro-text h1 {
+  font-size: 2.5rem; /* Kích thước chữ vừa phải */
+  font-weight: 700; /* Chữ đậm */
+  color: #000000; /* Màu chữ đen */
+  line-height: 1.4; /* Giãn cách dòng */
+  margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+  letter-spacing: 1px; /* Khoảng cách giữa các ký tự */
+  text-transform: uppercase; /* Chữ in hoa */
+}
+
+.intro-text p {
+  font-size: 1.2rem; /* Kích thước chữ vừa phải */
+  color: #000000; /* Màu chữ đen */
+  line-height: 1.6; /* Giãn cách dòng */
+  margin-bottom: 20px; /* Khoảng cách dưới mô tả */
+  letter-spacing: 0.5px; /* Khoảng cách giữa các ký tự */
+  font-family: 'Arial', sans-serif; /* Font chữ dễ đọc */
+}
+
+/* Phần nút bấm Discover Books */
+.discover-button {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase; /* Chữ in hoa */
+  text-align: center;
+}
+
+.discover-button:hover {
+  background-color: #000000; /* Nền đen khi hover */
+  color: #ffffff; /* Chữ trắng khi hover */
+}
+
+/* Phần ảnh bên phải */
+.intro-image {
+  max-width: 50%;
+  text-align: right; /* Căn phải ảnh */
+}
+
+.intro-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Phần danh sách sách */
+.book-section {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  width: 100%;
+}
